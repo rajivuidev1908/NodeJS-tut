@@ -13,8 +13,22 @@ http.createServer(function(req, res){
     res.end();
 }).listen(8081);
 
+var age = 36;
 http.createServer(function(req, res){
-    res.writeHead(200,{'content-type':"text/html"})
+    res.writeHead(200,{'content-type':"text/json"})
     res.write("<h2>Server 2</h2>");
+    res.write(
+        `
+        <!Doctype html>
+        <html>
+            <head>
+                <title>My Page</title>
+            </head>
+            <body>
+                <h1>Age: ${age}</h1>
+            </body>
+        </html>
+        `
+    )
     res.end();
 }).listen(8082);
