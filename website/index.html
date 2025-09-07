@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <!-- Link to the external CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Separate header file included via server-side include (optional) -->
+  <!--#include virtual="header.html" -->
+  <!-- Alternatively, directly paste the header markup here if not using includes -->
+
+  <div class="container">
+    <section id="contact" class="contact-us">
+      <h2>Contact Us</h2>
+      <p>
+        If you have any questions, feedback, or comments, feel free to reach out using
+        the form below. We look forward to hearing from you!
+      </p>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Your Name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Your Email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+</body>
+</html>
